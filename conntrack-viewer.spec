@@ -2,12 +2,13 @@
 Summary:	Conntrack Viewer - view the masquerading connection with iptables
 Summary(pl):	Conntrack Viewer - podgl±d po³±czeñ maskowanych przez iptables
 Name:		conntrack-viewer
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://cv.intellos.net/%{name}-%{version}/%{name}-%{version}.tar.gz
 URL:		http://cv.intellos.net/
+Requires:	kernel >= 2.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,7 +26,7 @@ maskowanych za pomoc± iptables, u¿ywa /proc/net/ip_conntrack.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install %{name}		$RPM_BUILD_ROOT%{_bindir}/%{name}
+install %{name}.pl		$RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
