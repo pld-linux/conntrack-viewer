@@ -1,3 +1,4 @@
+# _without_dist_kernel - without distribution kernel
 %include	/usr/lib/rpm/macros.perl
 Summary:	Conntrack Viewer - view the masquerading connection with iptables
 Summary(pl):	Conntrack Viewer - podgl±d po³±czeñ maskowanych przez iptables
@@ -8,7 +9,7 @@ License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://cv.intellos.net/%{name}-%{version}/%{name}-%{version}.tar.gz
 URL:		http://cv.intellos.net/
-Requires:	kernel >= 2.4
+%{!?_without_dist_kernel:Requires:	kernel >= 2.4 }
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
