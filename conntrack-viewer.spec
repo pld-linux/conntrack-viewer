@@ -12,6 +12,7 @@ Group:		Networking/Utilities
 Source0:	http://cv.intellos.net/%{name}-%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	21d12842f8f1eb57dec8848fc853e252
 URL:		http://cv.intellos.net/
+BuildRequires:	rpm-perlprov
 %{?with_dist_kernel:Requires:	kernel >= 2.4 }
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
