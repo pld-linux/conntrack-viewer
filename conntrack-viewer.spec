@@ -3,7 +3,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Conntrack Viewer - view the masquerading connection with iptables
-Summary(pl):	Conntrack Viewer - podgl±d po³±czeñ maskowanych przez iptables
+Summary(pl.UTF-8):   Conntrack Viewer - podglÄ…d poÅ‚Ä…czeÅ„ maskowanych przez iptables
 Name:		conntrack-viewer
 Version:	1.3
 Release:	1
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Conntrack Viewer is a perl script to view the masquerading connections
 with iptables, it uses /proc/net/ip_conntrack.
 
-%description -l pl
-Conntrack Viewer jest skryptem perlowym do ogl±dania po³±czeñ
-maskowanych za pomoc± iptables, u¿ywa /proc/net/ip_conntrack.
+%description -l pl.UTF-8
+Conntrack Viewer jest skryptem perlowym do oglÄ…dania poÅ‚Ä…czeÅ„
+maskowanych za pomocÄ… iptables, uÅ¼ywa /proc/net/ip_conntrack.
 
 %prep
 %setup -q
