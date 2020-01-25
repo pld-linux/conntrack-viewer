@@ -1,7 +1,6 @@
 # Conditional build:
 %bcond_without	dist_kernel	# without distribution kernel
 #
-%include	/usr/lib/rpm/macros.perl
 Summary:	Conntrack Viewer - view the masquerading connection with iptables
 Summary(pl.UTF-8):	Conntrack Viewer - podgląd połączeń maskowanych przez iptables
 Name:		conntrack-viewer
